@@ -72,7 +72,5 @@ createNewPost = (uid, body, mode, user) => {
 
   updates['/posts/' + newPostKey] = postData;
   updates['/user-posts/' + uid + '/' + newPostKey] = postData;
-
   firebase.database().ref().update(updates);
-
 }
