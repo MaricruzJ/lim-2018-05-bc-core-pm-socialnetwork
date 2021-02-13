@@ -1,0 +1,35 @@
+{
+  "name": "lim-2018-05-bc-core-pm-socialnetwork",
+  "version": "1.0.0",
+  "description": "* Maricruz J Enrique Rivera\r    * Mary Katty Vicuña Ore\r    * Patricia Vidal Ramirez",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "htmlhint": "^0.9.13",
+    "mocha": "^5.1.1",
+    "nyc": "^11.9.0",
+    "opener": "^1.4.3"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "scripts": {
+    "test-browser": "opener ./test/index.html",
+    "test-node": "nyc mocha ./test/headless.js && nyc report --reporter=html",
+    "test": "npm run test-node && npm run test-browser"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatriciaVidal/lim-2018-05-bc-core-pm-socialnetwork.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatriciaVidal/lim-2018-05-bc-core-pm-socialnetwork/issues"
+  },
+  "homepage": "https://github.com/PatriciaVidal/lim-2018-05-bc-core-pm-socialnetwork#readme"
+}
